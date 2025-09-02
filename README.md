@@ -7,9 +7,9 @@ ToDos:
 [] Hauptwebsite weitercoden
 
 
-Information das es einen neuen Stand gibt: 
+Information das es einen neuen Stand gibt (bitte mit Datum): 
 
-neuer Stand!!!!!!!!!!!<p>
-neuer Stand!!!!!!!
+neuer Stand!!!! 02.09.2025 
+hole dir denn neuen stand so: git pull origin main
 
 

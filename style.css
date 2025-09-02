@@ -36,3 +36,9 @@ nav .social-icons a {
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(15, 156, 97);
+}
