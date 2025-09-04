@@ -12,12 +12,19 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     background-color: #333;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -63,14 +70,24 @@ nav ul li a:hover {
 
 .header {
     background-color: #222121;
-    padding: 40px 20px 80px; /* give some vertical space */
+    padding: 40px 20px 80px; 
+}
+
+.header {
+    background-color: #222121;
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    box-sizing: border-box;
+    min-height: calc(100vh - 70px);
 }
 
 .header h1 {
     color: rgb(0, 255, 195);
     font-size: 3rem;
-    text-align: center; /* keep title centered */
-    margin-bottom: 30px;
+    text-align: center; 
+    margin-bottom: 200px; 
 }
 
 .header p {
@@ -79,8 +96,10 @@ nav ul li a:hover {
 }
 
 .header .header_text p{
-    margin-bottom: 20px;
-    font-size: 1.2rem;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgb(2, 229, 245);
 }
 
 .header-row {
@@ -89,51 +108,55 @@ nav ul li a:hover {
     justify-content: space-between;
     gap: 20px;
     max-width: 1100px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    margin-top: -24px; 
 }
 
 .header_image {
-    flex: 0 0 320px;
+    flex: 0 0 420px; 
 }
 
 .header_image img {
     width: 100%;
     height: auto;
-    max-height: 320px;
+    max-height: 420px; 
     object-fit: cover;
     border-radius: 20px;
     display: block;
 }
 
 .header-textbox {
-    flex: 1 1 1px; /* take remaining space */
+    flex: 1 1 1px;
     color: var(--hightlights-color);
 }
 
 .header-textbox p {
     padding: 0px 50px;
+    font-size: 1.5rem;
 }
 
 .btn-textbox {
     display: inline-block;
-    margin-top: 16px;
-    background: var(--primary-color);
+    margin-top: 50px;
+    background: #118c63;
     color: #fff;
     padding: 15px 18px;
     border-radius: 6px;
     text-decoration: none;
     margin-left: 50px;
+    font-size: 1.2rem;
 }
 
-/* Responsive: stack on smaller screens */
+
 @media (max-width: 800px) {
     .header-row {
-        flex-direction: column-reverse; /* text above image keeps image first on mobile */
+        flex-direction: column-reverse; 
         align-items: center;
+    margin-top: 0;
     }
 
     .header_image {
-        width: 80%;
+        width: 90%;
         flex: 0 0 auto;
     }
 

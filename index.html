@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <link rel="shortcut icon" type="image/x-icon" href="./access/img/Tap-Icon.png">
   </head>
   <body>
     <nav>
@@ -16,11 +17,11 @@
         <h1>B&O</h1>
       </div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="basti.html">Basti</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="basti.html">Basti</a></li>
       </ul>
       <div class="social-icons">
         <a
@@ -31,7 +32,7 @@
         <a href="#" class="iconYouTube"><i class="bx bxl-youtube"></i></a>
       </div>
     </nav>
-    <header class="header">
+    <header class="header" id="home">
       <h1>Willkommen bei B&O</h1>
       <div class="header-row">
         <div class="header_image">
@@ -44,12 +45,29 @@
           <p>
             Wir sind ein Team aus zwei Entwicklern und bauen Projektideen. Von
             Webseiten über Apps bis hin zu kompletten Systemen - wir setzen alles
-            um! Auf dieser website seht ihr diese.
+            um! Auf dieser Webseite seht ihr diese. <br>
             <span class="span">Viel Spaß!!!</span>
           </p>
           <a href="#" class="btn-textbox">Mehr erfahren</a>
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="shop" id="shop">
+        <h2>Shop</h2>
+        <p>Hier kommt bald unser Shop hin!</p>
+      </section>
+    </main>
+    <script>
+      function adjustHeaderHeight() {
+        const nav = document.querySelector('nav');
+        const header = document.querySelector('.header');
+        if (!nav || !header) return;
+        const navHeight = nav.getBoundingClientRect().height;
+        header.style.minHeight = (window.innerHeight - navHeight) + 'px';
+      }
+      window.addEventListener('load', adjustHeaderHeight);
+      window.addEventListener('resize', adjustHeaderHeight);
+    </script>
   </body>
 </html>
