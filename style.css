@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --primary-color: #4CAF50;
+    --hightlights-color: rgb(232, 248, 242);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,8 +26,8 @@ nav ul {
     gap: 1rem;
 }
 
-nav a {
-    color: white;
+nav ul a {
+    color: var(--hightlights-color);
     text-decoration: none;
 }
 
@@ -35,10 +40,104 @@ nav .social-icons a {
     background-color: #444;
     padding: 0.5rem 1rem;
     border-radius: 5px;
+    color: #ffffff;
+}
+
+nav .social-icons a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 .logo {
     font-size: 1.3rem;
     font-weight: bold;
-    color: rgb(15, 156, 97);
+    color: rgb(38, 215, 141);
+}
+
+nav ul li a:hover {
+    color: rgb(15, 156, 147);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.header {
+    background-color: #222121;
+    padding: 40px 20px 80px; /* give some vertical space */
+}
+
+.header h1 {
+    color: rgb(0, 255, 195);
+    font-size: 3rem;
+    text-align: center; /* keep title centered */
+    margin-bottom: 30px;
+}
+
+.header p {
+    color: rgb(232, 248, 242);
+    font-size: 1.1rem;
+}
+
+.header .header_text p{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto; 
+}
+
+.header_image {
+    flex: 0 0 320px;
+}
+
+.header_image img {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.header-textbox {
+    flex: 1 1 1px; /* take remaining space */
+    color: var(--hightlights-color);
+}
+
+.header-textbox p {
+    padding: 0px 50px;
+}
+
+.btn-textbox {
+    display: inline-block;
+    margin-top: 16px;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 800px) {
+    .header-row {
+        flex-direction: column-reverse; /* text above image keeps image first on mobile */
+        align-items: center;
+    }
+
+    .header_image {
+        width: 80%;
+        flex: 0 0 auto;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
 }
