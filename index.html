@@ -9,7 +9,11 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-    <link rel="shortcut icon" type="image/x-icon" href="./access/img/Tap-Icon.png">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./access/img/Tap-Icon.png"
+    />
   </head>
   <body>
     <nav>
@@ -44,8 +48,8 @@
           </div>
           <p>
             Wir sind ein Team aus zwei Entwicklern und bauen Projektideen. Von
-            Webseiten über Apps bis hin zu kompletten Systemen - wir setzen alles
-            um! Auf dieser Webseite seht ihr diese. <br>
+            Webseiten über Apps bis hin zu kompletten Systemen - wir setzen
+            alles um! Auf dieser Webseite seht ihr diese. <br />
             <span class="span">Viel Spaß!!!</span>
           </p>
           <a href="#" class="btn-textbox">Mehr erfahren</a>
@@ -54,20 +58,89 @@
     </header>
     <main class="main">
       <section class="shop" id="shop">
-        <h2>Shop</h2>
-        <p>Hier kommt bald unser Shop hin!</p>
+        <h1 class="shop-title">Shop</h1>
+        <div class="shopcardcontainer1">
+          <h1>HTML/CSS beginner Projekt</h1>
+          <img src="./access/img/html,cssprojekt.jpg" alt="" class="imgshophtmlcss">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            quisquam illum quibusdam qui ad, culpa error eaque officia provident
+            aliquid sed at omnis alias. Laborum commodi numquam quas veniam
+            cupiditate!
+          </p>
+          <span class="Doller">Kosten: 15€</span>
+          <a href="#" class="linkprojekts">Hier klicken!</a>
+        </div>
+        <div class="shopcardcontainer2">
+          <h1>Butterfly</h1>
+          <img src="./access/img/shopbutterfly.jpg" alt="" class="imgshopbutterfly">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A officia
+            expedita, adipisci consectetur sapiente, voluptates voluptatum
+            architecto eaque sit consequuntur, eum eveniet quidem animi aperiam
+            quaerat error blanditiis. Error, hic.
+          </p>
+          <span class="Doller">Kosten: 15€</span>
+          <a href="#" class="linkprojekts">Hier klicken!</a>
+        </div>
+        <div class="shopcardcontainer3">
+          <h1>Python Projekt</h1>
+          <img src="./access/img/shoppython.png" alt="" class="imgshoppython">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint
+            harum saepe ut rem placeat quidem fugiat. At placeat facere, nemo
+            itaque obcaecati architecto modi atque, asperiores repudiandae vitae
+            deserunt?
+          </p>
+          <span class="Doller">Kosten: 15€</span>
+          <a href="#" class="linkprojekts">Hier klicken!</a>
+        </div>
+        <div class="shopcardcontainer4">
+          <h1>First Projekt</h1>
+          <img src="./access/img/shopfirstprojekt.jpg" alt="" class="imgshopfirstprojekt">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint
+            harum saepe ut rem placeat quidem fugiat. At placeat facere, nemo
+            itaque obcaecati architecto modi atque, asperiores repudiandae vitae
+            deserunt?
+          </p>
+          <span class="Doller">Kosten: 15€</span>
+          <a href="#" class="linkprojekts">Hier klicken!</a>
+        </div>
+        <div class="shopcardcontainer5">
+          <h1>About Me</h1>
+          <img src="./access/img/shopaboutme.jpg" alt="" class="imgshopaboutme">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint
+          harum saepe ut rem placeat quidem fugiat. At placeat facere, nemo
+          itaque obcaecati architecto modi atque, asperiores repudiandae vitae
+          deserunt?
+          </p>
+          <span class="Doller">Kosten: 15€</span>
+          <a href="#" class="linkprojekts">Hier klicken!</a>
+        </div>
+        <div class="shopcardcontainer6">
+          <h1>Bike Tour</h1>
+          <img src="./access/img/shopbiketour.jpg" alt="" class="imgshopbiketour">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint
+          harum saepe ut rem placeat quidem fugiat. At placeat facere, nemo
+          itaque obcaecati architecto modi atque, asperiores repudiandae vitae
+          deserunt?
+          </p>
+          <span class="Doller">Kosten: 20€</span>
+          <a href="#" class="linkprojekts">Hier klicken!</a>
+        </div>
       </section>
     </main>
     <script>
       function adjustHeaderHeight() {
-        const nav = document.querySelector('nav');
-        const header = document.querySelector('.header');
+        const nav = document.querySelector("nav");
+        const header = document.querySelector(".header");
         if (!nav || !header) return;
         const navHeight = nav.getBoundingClientRect().height;
-        header.style.minHeight = (window.innerHeight - navHeight) + 'px';
+        header.style.minHeight = window.innerHeight - navHeight + "px";
       }
-      window.addEventListener('load', adjustHeaderHeight);
-      window.addEventListener('resize', adjustHeaderHeight);
+      window.addEventListener("load", adjustHeaderHeight);
+      window.addEventListener("resize", adjustHeaderHeight);
     </script>
   </body>
 </html>
